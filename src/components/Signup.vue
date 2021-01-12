@@ -92,7 +92,7 @@ export default {
                  password: this.user.email,
                  dob: this.user.dob,
                  profile: this.user.profile,
-                 fname: this.user.username,
+                 fname: this.user.fname,
                  lname: this.user.lname,
             }
           }
