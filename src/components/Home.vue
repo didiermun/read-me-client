@@ -21,7 +21,7 @@
                 <input type="password" name="password" id="password" placeholder="Password" v-model="user.password">
             </div>
             <div>
-                <input type="button" value="Submit" class="submit" v-on:click=getMethods>
+                <input type="button" value="Submit" class="submit" v-on:click=createUser>
             </div>
         </form>
     </div>
@@ -30,7 +30,7 @@
     </div>
 </template>
 <script>
-import { gql } from "apollo-boost";
+import gql from 'graphql-tag'
 export default {
      data() {
     return {
@@ -40,28 +40,45 @@ export default {
         password: "Munezero",
         email: "didiermunezer38@gmail.com",
       },
-      courses: []
+      courses: [],
     };
   },
-    apollo: {
-    courses: {
-      query: gql`
-        {
-         users{
-            username
-            id
-            fname
-            lname
-            type
-        }
-        }`
-
-    }
-  },
+    apollo:{
+      courses:{
+        query: gql`
+          query {
+            courses{
+                id
+                name
+            }
+          }
+        `,
+      }
+    },
   methods:{
       getMethods(){
-          alert(this.courses.length);
-      }
+          alert(this.courses[0].name);
+      },
+      createUser(){
+      this.$apollo.mutate({
+        
+        mutation: gql`
+            mutation login($username:String!, $password:String!){
+              logindata(username: $username, password:$password){
+                token
+              }
+            }
+          `,
+          variables: {
+            username: this.user.username,
+            password: this.user.email,
+          }
+      })
+      .then(response => {
+        this.user = response.data.createUser  //adding it to our previous query
+        //location.reload()
+      })
+    },
   }
 }
 </script>
