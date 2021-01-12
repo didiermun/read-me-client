@@ -18,8 +18,13 @@
   },
   "dependencies": {
     "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
     "axios": "^0.21.1",
     "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
     "normalize.css": "^7.0.0",
     "object-assign": "^4.1.1",
     "offline-plugin": "^4.8.0",

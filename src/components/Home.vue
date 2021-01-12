@@ -21,15 +21,16 @@
                 <input type="password" name="password" id="password" placeholder="Password" v-model="user.password">
             </div>
             <div>
-                <input type="button" value="Submit" class="submit">
+                <input type="button" value="Submit" class="submit" v-on:click=getMethods>
             </div>
         </form>
     </div>
-    <p>Already have an account? <span>Sign in here</span></p>
+    <p >Already have an account? <span>Sign in here</span></p>
     </div>
     </div>
 </template>
 <script>
+import { gql } from "apollo-boost";
 export default {
      data() {
     return {
@@ -39,12 +40,29 @@ export default {
         password: "Munezero",
         email: "didiermunezer38@gmail.com",
       },
-      submitted: false,
-      selects: ['Male','Female']
+      courses: []
     };
   },
-  methods:{
+    apollo: {
+    courses: {
+      query: gql`
+        {
+         users{
+            username
+            id
+            fname
+            lname
+            type
+        }
+        }`
+
     }
+  },
+  methods:{
+      getMethods(){
+          alert(this.courses.length);
+      }
+  }
 }
 </script>
 <style scoped>
