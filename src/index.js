@@ -5,6 +5,7 @@ import VueApollo from 'vue-apollo'
 import { ApolloClient } from 'apollo-client'
 import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
+import './index.css'
 Vue.config.productionTip = false
 
 const httpLink = new HttpLink({
