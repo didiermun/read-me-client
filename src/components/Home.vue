@@ -14,6 +14,14 @@
                 <input type="text" name="username" id="username" placeholder="Username" v-model="user.username">
             </div>
             <div>
+                <label for="email">Last name</label>
+                <input type="text" name="email" id="email" placeholder="Email" v-model="user.email">
+            </div>
+             <div>
+                <label for="email">First name</label>
+                <input type="text" name="email" id="email" placeholder="Email" v-model="user.email">
+            </div>
+             <div>
                 <label for="email">email</label>
                 <input type="text" name="email" id="email" placeholder="Email" v-model="user.email">
             </div>
@@ -37,9 +45,9 @@ export default {
     return {
       user: {
         id: "",
-        username: "Didien",
-        password: "Munezero",
-        email: "didiermunezer38@gmail.com",
+        username: "",
+        password: "",
+        email: "",
       },
       courses: [],
     };
@@ -83,10 +91,7 @@ export default {
         //location.reload()
       })
       .catch((error) => {
-      // Error
-      //console.error(error.graphQLErrors[0].message)
-      console.error(error.graphQLErrors[0].extensions.code)
-      alert(Object.keys(error))
+      alert(error.graphQLErrors[0].extensions.code+' : '+error.graphQLErrors[0].message)
     })
     },
   }
