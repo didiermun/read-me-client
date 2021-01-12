@@ -85,7 +85,7 @@ export default {
       .catch((error) => {
       // Error
       //console.error(error.graphQLErrors[0].message)
-      console.error(error.graphQLErrors[0].message)
+      console.error(error.graphQLErrors[0].extensions.code)
       alert(Object.keys(error))
     })
     },
