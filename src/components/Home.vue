@@ -9,17 +9,19 @@
             </div>
             
         <form action="#" method="post" autocomplete="off">
+            <div class="for-names">
+            <div>
+                <label for="fname">First name</label>
+                <input type="text" name="fname" id="email" placeholder="First name" v-model="user.fname">
+            </div>
+            <div>
+                <label for="fname">Last name</label>
+                <input type="text" name="lname" id="email" placeholder="Last name" v-model="user.lname">
+            </div>
+            </div>
             <div>
                 <label for="username">username</label>
                 <input type="text" name="username" id="username" placeholder="Username" v-model="user.username">
-            </div>
-            <div>
-                <label for="email">Last name</label>
-                <input type="text" name="email" id="email" placeholder="Email" v-model="user.email">
-            </div>
-             <div>
-                <label for="email">First name</label>
-                <input type="text" name="email" id="email" placeholder="Email" v-model="user.email">
             </div>
              <div>
                 <label for="email">email</label>
@@ -48,6 +50,10 @@ export default {
         username: "",
         password: "",
         email: "",
+        lname:"",
+        fname:"",
+        dob:"2020-12-12",
+        profile :""
       },
       courses: [],
     };
@@ -72,9 +78,11 @@ export default {
       this.$apollo.mutate({
         
         mutation: gql`
-            mutation login($userData: loginInput!) {
-            login(logindata: $userData) {
-                token
+            mutation createUser($userData: CreateInput!) {
+            createUser(input: $userData) {
+                id
+                username
+                lname
              }
             }
           `,
@@ -82,15 +90,20 @@ export default {
               "userData":{
                  username: this.user.username,
                  password: this.user.email,
+                 dob: this.user.dob,
+                 profile: this.user.profile,
+                 fname: this.user.username,
+                 lname: this.user.lname,
             }
           }
       })
       .then(response => {
         //this.user = response.data.createUser  //adding it to our previous query
-        console.log(response.data)
+        alert(response.data.createUser.username)
         //location.reload()
       })
       .catch((error) => {
+          console.error(error)
       alert(error.graphQLErrors[0].extensions.code+' : '+error.graphQLErrors[0].message)
     })
     },
@@ -101,7 +114,20 @@ export default {
 *{
     font-family:  'Bahnschrift',sans-serif;
 }
-
+.for-names{
+    width: 100%;
+    background-color: #5324;
+    left: 0;
+    margin-left: -55px;
+}
+.for-names div{
+    width: 45%;
+    display: inline;
+    float: right;
+}
+.for-names input{
+width: 80%;
+}
 .submit{
     background-color: #272343;
     color: #FFFFFF;
@@ -119,7 +145,7 @@ body{
     overflow: hidden;
 }
 input{
-    width: 300px;
+    width: 80%;
     margin: 5px;
     font-size: 17px;
     border-radius: 7px;
@@ -128,6 +154,7 @@ input{
     background: #FFFFFF;
     box-shadow:1.5px 1.5px 0px #999;
     padding: 10px;
+    text-align: center;
 }
 h1{
     text-transform: capitalize;
@@ -137,11 +164,12 @@ h1{
 }
 .sign-up-form{
    margin: auto;
-    margin-top: 150px; 
+   margin-top: 80px; 
+   margin-left: -50px;
 }
 .side2{
    min-width: 40%;
-    float: right; 
+   float: right; 
 }
 .side{
     min-width: 50%;
@@ -152,11 +180,13 @@ h1{
     padding: -20px;
 }
 label{
-    font-weight: 700;
+    font-weight: 40;
     font-size: 20px;
     text-transform: capitalize;
-    padding-left: 10px;
     margin: auto;
+    margin-top: 17px;
     text-align: center;
+    display: block;
+    width: 100%;
 }
 </style>
