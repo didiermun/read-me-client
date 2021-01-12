@@ -9,16 +9,16 @@
             </div>
         <form action="#" method="post" autocomplete="off">
             <div>
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Username">
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" placeholder="Username" v-model="user.username">
             </div>
             <div>
                 <label for="email">email</label>
-                <input type="text" name="email" id="email" placeholder="Email">
+                <input type="text" name="email" id="email" placeholder="Email" v-model="user.email">
             </div>
             <div>
                 <label for="password">password</label>
-                <input type="text" name="password" id="password" placeholder="Password">
+                <input type="password" name="password" id="password" placeholder="Password" v-model="user.password">
             </div>
             <div>
                 <input type="button" value="Submit" class="submit">
@@ -29,7 +29,24 @@
     </div>
     </div>
 </template>
-
+<script>
+export default {
+     data() {
+    return {
+      user: {
+        id: "",
+        username: "Didien",
+        password: "Munezero",
+        email: "didiermunezer38@gmail.com",
+      },
+      submitted: false,
+      selects: ['Male','Female']
+    };
+  },
+  methods:{
+    }
+}
+</script>
 <style scoped>
 *{
     font-family:  'Bahnschrift',sans-serif;
@@ -38,7 +55,7 @@
 .submit{
     background-color: #272343;
     color: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 7px;
     margin-top: 15px;
     margin-left: 15px;
     padding: 10px;
@@ -59,12 +76,14 @@ input{
     border: 0px #FFFFFF solid;
     display: block;
     background: #FFFFFF;
-    box-shadow:2px 2px 4px #999;
+    box-shadow:1.5px 1.5px 0px #999;
     padding: 10px;
 }
 h1{
     text-transform: capitalize;
     font-size: 35px;
+    margin-bottom: 50px;
+    margin-left: 20px;
 }
 .sign-up-form{
    margin: auto;
