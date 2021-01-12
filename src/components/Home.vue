@@ -7,6 +7,7 @@
         <div>
                 <h1>Create Account</h1>
             </div>
+            
         <form action="#" method="post" autocomplete="off">
             <div>
                 <label for="username">username</label>
@@ -59,25 +60,32 @@ export default {
       getMethods(){
           alert(this.courses[0].name);
       },
-      createUser(){
+      async createUser(){
       this.$apollo.mutate({
         
         mutation: gql`
-            mutation login($username:String!, $password:String!){
-              logindata(username: $username, password:$password){
+            mutation login($userData: loginInput!) {
+            login(logindata: $userData) {
                 token
-              }
+             }
             }
           `,
           variables: {
-            username: this.user.username,
-            password: this.user.email,
+              "userData":{
+                 username: this.user.username,
+                 password: this.user.email,
+            }
           }
       })
       .then(response => {
-        this.user = response.data.createUser  //adding it to our previous query
+        //this.user = response.data.createUser  //adding it to our previous query
+        console.log(response.data)
         //location.reload()
       })
+      .catch((error) => {
+      // Error
+      console.log(error)
+    })
     },
   }
 }
