@@ -29,7 +29,8 @@ const apolloProvider = new VueApollo({
 
 const routes = {
   '/': Signup,
-  '/about': App
+  '/about': App,
+  '/signup': App
 }
 
 Vue.config.productionTip = false

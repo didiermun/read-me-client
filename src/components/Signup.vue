@@ -94,6 +94,7 @@ export default {
                  profile: this.user.profile,
                  fname: this.user.fname,
                  lname: this.user.lname,
+                 email: this.user.email,
             }
           }
       })
@@ -118,7 +119,7 @@ export default {
     width: 100%;
     background-color: #5324;
     left: 0;
-    margin-left: -55px;
+    margin-left: -10%;
 }
 .for-names div{
     width: 45%;
