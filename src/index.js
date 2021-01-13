@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import App from './components/App.vue'
+import Login from './components/Login.vue'
 import Signup from './components/Signup.vue'
 import VueApollo from 'vue-apollo'
 import { ApolloClient } from 'apollo-client'
 import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import './index.css'
+const NotFound = { template: '<p>Page not found</p>' }
 Vue.config.productionTip = false
 
 const httpLink = new HttpLink({
@@ -29,20 +31,22 @@ const apolloProvider = new VueApollo({
 })
 
 const routes = {
-  '/': Signup,
-  '/about': App,
-  '/signup': App
+  '/': App,
+  '/login': Login,
+  '/signup': Signup
 }
 
 Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
-  // apolloProvider,
   provide: apolloProvider.provide(),
+  data: {
+    currentRoute: window.location.pathname
+  },
   computed: {
     ViewComponent () {
-      return routes[this.currentRoute] || Signup
+      return routes[this.currentRoute] || App
     }
   },
   render (h) { return h(this.ViewComponent) }
