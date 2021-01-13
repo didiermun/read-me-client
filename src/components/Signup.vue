@@ -76,6 +76,12 @@ export default {
           alert(this.courses[0].name);
       },
       async createUser(){
+          const notValid = this.user.password.trim().length < 3|| this.user.username.trim().length < 3 || this.user.lname.trim().length < 3 || this.user.fname.trim().length < 3 || this.user.email.trim().length < 8;
+          if(notValid){
+              this.status = "Your inputs are not valid"
+          }
+          else{
+              this.status = ""
       this.$apollo.mutate({
         
         mutation: gql`
@@ -105,9 +111,10 @@ export default {
         //location.reload()
       })
       .catch((error) => {
-          console.error(error)
-      this.status = error.graphQLErrors[0].extensions.code+' : '+error.graphQLErrors[0].message;
+          this.status = ""
+      this.status = error.graphQLErrors[0].message;
     })
+    }
     },
   }
 }

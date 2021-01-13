@@ -42,6 +42,12 @@ export default {
   },
   methods:{
       async LoginUser(){
+          const notValid = this.user.password.trim().length < 3|| this.user.username.trim().length < 3;
+          if(notValid){
+              this.status = "Your inputs are not valid"
+          }
+          else{
+              this.status = "",
       this.$apollo.mutate({
         
         mutation: gql`
@@ -60,11 +66,13 @@ export default {
       })
       .then(response => {
         localStorage.setItem('user_auth',response.data.login.token)
+        this.status = ""
       })
       .catch((error) => {
           console.error(error)
-      this.status = error.graphQLErrors[0].extensions.code+' : '+error.graphQLErrors[0].message;
+      this.status = error.graphQLErrors[0].message;
     })
+          }
     },
   }
 }
@@ -77,6 +85,7 @@ export default {
 .status{
     text-align: center;
     color: red;
+    max-width:400px;
 }
 .altenative{
     text-align: center;
