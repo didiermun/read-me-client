@@ -1,3 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*{
+    font-family:  'Bahnschrift',sans-serif;
+}
+
+.submit{
+    background-color: #272343;
+    color: #FFFFFF;
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+span{
+    font-weight: 700;
+    color: #272343;
+}
+input{
+    width: 80%;
+    margin: 5px;
+    font-size: 17px;
+    border-radius: 7px;
+    border: 0px #FFFFFF solid;
+    display: block;
+    background: #FFFFFF;
+    box-shadow:1.5px 1.5px 0px #999;
+    padding: 10px;
+    text-align: center;
+}
+h1{
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
