@@ -140,6 +140,7 @@ h3{
 }
 h5{
     margin: 30px 50px 10px;
+    display: none;
 }
 .pro-image{
     width: 130px;
