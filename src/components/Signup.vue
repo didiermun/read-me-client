@@ -131,9 +131,6 @@ export default {
 .altenative{
     text-align: center;
 }
-template{
-    overflow: hidden;
-}
 .for-names{
     width: 100%;
     background-color: #5324;

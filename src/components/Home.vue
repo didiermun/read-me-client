@@ -144,7 +144,7 @@ label{
 h3{
     font-size: 20px;
     font-weight: 800;
-    margin: 30px 70px;
+    margin: 5% 30%;
 }
 h5{
     margin: 30px 50px 10px;
@@ -195,18 +195,17 @@ form input{
     height: 40px;
     padding: 4px 20px;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 input{
-    /* width: fit-content;
-    padding: 10px 20px;
-    box-shadow: 0px 0px 2px; */
     width: 80%;
     font-size: 17px;
     border-radius: 7px;
     border: 0px #FFFFFF solid;
     display: block;
-    background: #FFFFFF;
-    box-shadow:1px 1px 1px #999;
-    background: #fff;
+    background: #ebe8e8;
+    box-shadow:1px 1px 1px rgb(207, 207, 207);
     padding: 10px;
     text-align: center;
 
