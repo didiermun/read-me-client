@@ -226,7 +226,7 @@ input{
 }
 .medium .parent{
     margin-bottom: 10px;
-    box-shadow: 0px 0px 3px;
+    box-shadow: 0.5px 0.5px 3px;
 }
 .recommendations{
     background-color: #3423;
@@ -238,10 +238,11 @@ input{
     min-width: 90%;
     background-color: #74B49B;
     min-height: 38%;
+    display: none;
 }
 .profile{
     min-width: 90%;
     background-color: #fff;
-    min-height: 60%;
+    min-height: 100%;
 }
 </style>
