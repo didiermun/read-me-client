@@ -75,10 +75,15 @@
              <img class="pro-image" src="https://th.bing.com/th/id/OIP.HJYbPogeBDhnlK0b1vFTWAD6D6?w=175&h=180&c=7&o=5&pid=1.7" alt="Photo">
             </div>
             <form action="#">
+                <label for="fname">First name</label>
                 <input type="text" name="fname" placeholder="First Name" v-model="getCurrentUser.fname">
+                <label for="fname">First name</label>
                 <input type="text" name="lname" placeholder="Last name" v-model="getCurrentUser.lname">
+                <label for="fname">First name</label>
                 <input type="text" name="username" placeholder="Date Of Birth" v-model="getCurrentUser.dob">
+                <label for="fname">First name</label>
                 <input type="text" name="username" placeholder="Email" v-model="getCurrentUser.email">
+                <label for="fname">First name</label>
                 <input type="text" name="username" placeholder="Password" v-model="getCurrentUser.password">
                 <input type="submit" value="Save Changes" class="button">
             </form>
