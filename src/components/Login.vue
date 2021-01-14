@@ -132,7 +132,7 @@ h1{
 }
 .side{
     min-width: 50%;
-    min-height: 42em;;
+    min-height: 47em;
     background-color: #74B49B;
     float: left;
     margin: -10px;

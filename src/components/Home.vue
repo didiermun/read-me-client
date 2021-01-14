@@ -77,13 +77,13 @@
             <form action="#">
                 <label for="fname">First name</label>
                 <input type="text" name="fname" placeholder="First Name" v-model="getCurrentUser.fname">
-                <label for="fname">First name</label>
+                <label for="fname">Last name</label>
                 <input type="text" name="lname" placeholder="Last name" v-model="getCurrentUser.lname">
-                <label for="fname">First name</label>
-                <input type="text" name="username" placeholder="Date Of Birth" v-model="getCurrentUser.dob">
-                <label for="fname">First name</label>
+                <label for="fname">Date of birth</label>
+                <input type="date" name="username" placeholder="Date Of Birth" v-model="getCurrentUser.dob">
+                <label for="fname">Email</label>
                 <input type="text" name="username" placeholder="Email" v-model="getCurrentUser.email">
-                <label for="fname">First name</label>
+                <label for="fname">Password</label>
                 <input type="text" name="username" placeholder="Password" v-model="getCurrentUser.password">
                 <input type="submit" value="Save Changes" class="button">
             </form>
@@ -138,6 +138,9 @@ export default {
 form *{
      margin: 0px auto 3px;
 }
+label{
+    font-size: 20px;
+}
 h3{
     font-size: 20px;
     font-weight: 800;
@@ -187,15 +190,26 @@ form input{
     margin-top: -10px;
 }
 .submit{
-    margin: 5px 40px;
+    margin: 10px 40px;
     width: fit-content;
     height: 40px;
     padding: 4px 20px;
 }
 input{
-    width: fit-content;
+    /* width: fit-content;
     padding: 10px 20px;
-    box-shadow: 0px 0px 2px;
+    box-shadow: 0px 0px 2px; */
+    width: 80%;
+    font-size: 17px;
+    border-radius: 7px;
+    border: 0px #FFFFFF solid;
+    display: block;
+    background: #FFFFFF;
+    box-shadow:1px 1px 1px #999;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+
 }
 .main{
     width: 100%;
