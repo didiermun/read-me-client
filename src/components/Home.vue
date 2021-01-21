@@ -67,7 +67,7 @@
             
         </div>
         <div class="testimonials b-parents">
-            <div><h2>Lesson Recomms</h2></div>
+            <div><h2>Comment and feeds</h2></div>
             <div class="lesson">
                 <div class="lesson-header">
                 <p class="title">Introduction to Java</p><p>by El healer</p>
@@ -298,6 +298,10 @@ input{
     overflow: auto;
     border-radius: 4px;
 }
+.b-parents h2{
+    text-align: center;
+    top: 10px;
+    }
 .medium{
     display: flex;
     flex-direction: column;
@@ -326,8 +330,5 @@ input{
     background-color: #fff;
     min-height: 100%;
 }
-.recommendations h2{
-    text-align: center;
-    top: 10px;
-}
+
 </style>
