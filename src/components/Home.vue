@@ -11,6 +11,7 @@
     <div class="main">
     <div class="big">
         <div class="recommendations b-parents">
+            <div><h2>Lesson Recomms</h2></div>
             <div class="lesson">
                 <div class="lesson-header">
                 <p class="title">Introduction to Java</p><p>by El healer</p>
@@ -268,5 +269,9 @@ input{
     min-width: 90%;
     background-color: #fff;
     min-height: 100%;
+}
+.recommendations h2{
+    text-align: center;
+    top: 10px;
 }
 </style>

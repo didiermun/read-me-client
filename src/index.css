@@ -1,5 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Noto+Sans+JP:wght@300&family=Rajdhani:wght@500&display=swap');
 *{
-    font-family:  'Bahnschrift',sans-serif;
+    font-family:  'Andika New Basic',sans-serif;
 }
 
 .submit{
