@@ -168,7 +168,8 @@ form{
 
 .lesson{
     padding: 10px 20px;
-    border-bottom: 2px rgb(173, 160, 146) solid;
+    background-color: #fff;
+    /* border-bottom: 2px rgb(173, 160, 146) solid; */
 }
 .lesson-header{
     display: flex;
@@ -197,6 +198,8 @@ form input{
 }
 ::-webkit-scrollbar {
   width: 10px;
+  background-color: rgb(223, 221, 221);
+  border-radius: 3;
 }
 input{
     width: 80%;
@@ -228,13 +231,15 @@ input{
     margin-right: -2%;
 }
 .big .b-parents{
+    background-color: #fff;
     margin-left: 20px;
     min-width: 43%;
     max-width: 43%;
     height: 550px;
-    box-shadow: 0px 0px 2px;
+    box-shadow: 0px 0px 4px rgb(167, 164, 164);
     margin-top: 30px;
     overflow: auto;
+    border-radius: 4px;
 }
 .medium{
     display: flex;
