@@ -11,7 +11,7 @@
     <div class="main">
     <div class="big">
         <div class="recommendations b-parents">
-            <div><h2>Lesson Recomms</h2></div>
+            <div><h2>Recommendations</h2></div>
             <div class="lesson">
                 <div class="lesson-header">
                 <p class="title">Introduction to Java</p><p>by El healer</p>
@@ -226,6 +226,7 @@ form{
     padding: 10px 20px;
     background-color: #fff;
     box-shadow: 0px 0px 1px;
+    cursor: pointer;
     /* border-bottom: 2px rgb(173, 160, 146) solid; */
 }
 .lesson-header{
@@ -252,6 +253,10 @@ form input{
     width: fit-content;
     height: 40px;
     padding: 4px 20px;
+    background-color: #1da571;
+    stroke: none;
+    box-shadow: none;
+    border: 0px;
 }
 ::-webkit-scrollbar {
   width: 8px;
