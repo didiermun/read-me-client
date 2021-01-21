@@ -170,6 +170,7 @@ form{
 .lesson{
     padding: 10px 20px;
     background-color: #fff;
+    box-shadow: 0px 0px 1px;
     /* border-bottom: 2px rgb(173, 160, 146) solid; */
 }
 .lesson-header{
