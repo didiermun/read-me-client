@@ -16,10 +16,10 @@
                 <div class="form-header">
                 <select name="course" class="course-select" v-model="lesson.course">
                     <option value="">--Course--</option>
-                    <option value="Java">Java</option>
-                    <option value="Java">Java</option>
-                    <option value="Java">Java</option>
-                    <option value="Java">Java</option>
+                    <option value="5ffebd5e52325d2b1c4aa273">Java</option>
+                    <option value="5ffebd5e52325d2b1c4aa273">Scripts</option>
+                    <option value="5ffebd5e52325d2b1c4aa273">Maven</option>
+                    <option value="5ffebd5e52325d2b1c4aa273">Tools</option>
                 </select>
                 <input class="nameInput" type="text" name="name" v-model="lesson.name" placeholder="Lesson name">
                 </div>
