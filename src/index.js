@@ -39,7 +39,10 @@ const apolloProvider = new VueApollo({
 const routes = {
   '/': Home,
   '/login': Login,
-  '/signup': Signup
+  '/signup': Signup,
+  '/lessons':Lessons,
+  '/lessons/lesson':SingleLesson,
+  '/lessons/add': NewLesson,
 }
 
 Vue.config.productionTip = false
