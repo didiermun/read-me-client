@@ -13,13 +13,14 @@
         <div class="testimonials b-parents">
             <form action="#">
                 <select name="course" class="course-select">
+                    <option value="">--Course--</option>
                     <option value="Java">Java</option>
                     <option value="Java">Java</option>
                     <option value="Java">Java</option>
                     <option value="Java">Java</option>
                 </select>
                 <label for="body">Body</label>
-                <textarea name="body" cols="100" rows="20"></textarea>
+                <textarea name="body" cols="80" rows="15"></textarea>
                 <input type="submit" value="Add Lesson">
             </form>
         </div>
@@ -29,53 +30,53 @@
             <div><h2>My Guide</h2></div>
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+                <p class="title">Text highliting</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
 
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+                <p class="title">code formatting</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
 
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+                <p class="title">adding image</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
 
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+                <p class="title">font family and size</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
 
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+                <p class="title">re usable collable codes</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+                <p class="title">Features and links</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+                <p class="title">Introduction to Java</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+                <p class="title">Introduction to Java</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
@@ -117,6 +118,11 @@ export default {
 form *{
      margin: 0px auto 3px;
 }
+textarea{
+    margin-top: 0px;
+    font-size: 17px;
+    text-align: center;
+}
 label{
     font-size: 15px;
     margin-top: 0px;
@@ -156,6 +162,7 @@ form{
 .course-select{
     width: 150px;
     font-size: 19px;
+    margin-bottom: 0px;
     float: left;
     margin-left: 10px;
     margin-top: 10px;
