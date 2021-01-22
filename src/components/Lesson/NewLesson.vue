@@ -123,25 +123,116 @@
         </div>
     </div>
     <div class="medium">
-        <div class="profile parent">
-            <h3>My Profile</h3>
-            <div class="photo">
-            <h5>Photo</h5>
-             <img class="pro-image" src="https://th.bing.com/th/id/OIP.HJYbPogeBDhnlK0b1vFTWAD6D6?w=175&h=180&c=7&o=5&pid=1.7" alt="Photo">
+        <!-- <div class="profile parent">
+             <div><h2>My Guide</h2></div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
-            <form action="#">
-                <label for="fname">First name</label>
-                <input type="text" name="fname" placeholder="First Name" v-model="getCurrentUser.fname">
-                <label for="fname">Last name</label>
-                <input type="text" name="lname" placeholder="Last name" v-model="getCurrentUser.lname">
-                <label for="fname">Date of birth</label>
-                <input type="date" name="username" placeholder="Date Of Birth" v-model="getCurrentUser.dob">
-                <label for="fname">Email</label>
-                <input type="text" name="username" placeholder="Email" v-model="getCurrentUser.email">
-                <label for="fname">Password</label>
-                <input type="text" name="username" placeholder="Password" v-model="getCurrentUser.password">
-                <input type="submit" value="Save Changes" class="button">
-            </form>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+        </div> -->
+        <div class="recommendations b-parents">
+            <div><h2>My Guide</h2></div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by El healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            
         </div>
         <div class="stats parent">
             <div>
