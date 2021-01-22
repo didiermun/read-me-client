@@ -11,59 +11,17 @@
     <div class="main">
     <div class="big">
         <div class="testimonials b-parents">
-            <div><h2>Comment and feeds</h2></div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
+            <form action="#">
+                <select name="course" class="course-select">
+                    <option value="Java">Java</option>
+                    <option value="Java">Java</option>
+                    <option value="Java">Java</option>
+                    <option value="Java">Java</option>
+                </select>
+                <label for="body">Body</label>
+                <textarea name="body" cols="100" rows="20"></textarea>
+                <input type="submit" value="Add Lesson">
+            </form>
         </div>
     </div>
     <div class="medium">
@@ -195,6 +153,16 @@ form{
     cursor: pointer;
     /* border-bottom: 2px rgb(173, 160, 146) solid; */
 }
+.course-select{
+    width: 150px;
+    font-size: 19px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    line-height:1;
+    box-shadow:0 0 1px 0 rgba(129, 36, 36, 0.6);
+}
 .lesson-header{
     display: flex;
     width: 100%;
@@ -261,8 +229,8 @@ input{
 .big .b-parents{
     background-color: #fff;
     margin-left: 20px;
-    min-width: 43%;
-    max-width: 43%;
+    min-width: 90%;
+    max-width: 90%;
     height: 550px;
     box-shadow: 0px 0px 4px rgb(167, 164, 164);
     margin-top: 30px;
