@@ -11,7 +11,9 @@
     <div class="main">
     <div class="big">
         <div class="testimonials b-parents">
-            <form action="#">
+            <form action="#" v-on:submit.prevent="onSubmit">
+                <span class="status">{{status}}</span>
+                <div class="form-header">
                 <select name="course" class="course-select" v-model="lesson.course">
                     <option value="">--Course--</option>
                     <option value="Java">Java</option>
@@ -19,9 +21,11 @@
                     <option value="Java">Java</option>
                     <option value="Java">Java</option>
                 </select>
+                <input class="nameInput" type="text" name="name" v-model="lesson.name" placeholder="Lesson name">
+                </div>
                 <label for="body">Body</label>
                 <textarea name="body" cols="80" rows="15" v-model="lesson.content"></textarea>
-                <input type="submit" value="Add Lesson">
+                <input type="submit" value="Add Lesson" v-on:click=addNewCourse>
             </form>
         </div>
     </div>
@@ -95,13 +99,16 @@ export default {
         id: "",
         course: "",
         content: "",
+        name:""
       },
       status:""
     };
   },
   methods:{
+       onSubmit () {
+    },
       async addNewCourse(){
-          const notValid = this.user.course.trim().length < 30;
+          const notValid = this.lesson.content.trim().length < 30;
           if(notValid){
               this.status = "Your content is not valid"
           }
@@ -110,8 +117,8 @@ export default {
       this.$apollo.mutate({
         
         mutation: gql`
-            mutation createCourse($courseData: CourseInput!) {
-            login(input: $courseData) {
+            mutation createLesson($courseData: LessonInput!) {
+            createLesson(input: $courseData) {
                 content
              }
             }
@@ -120,6 +127,8 @@ export default {
               "courseData":{
                  content: this.lesson.content,
                  course: this.lesson.course,
+                 name: this.lesson.name,
+                 author:['5ffea2835cc3812678b9a435','5ffebd5e52325d2b1c4aa273']
             }
           }
       })
@@ -158,6 +167,17 @@ h5{
     margin: 30px 50px 10px;
     display: none;
 }
+.form-header{
+    display: flex;
+}
+.form-header *{
+    margin: 5px;
+}
+.nameInput{
+    background-color: #fff;
+    box-shadow: 0px 1px 1px rgb(34, 3, 3);
+    margin-top: 10px;
+}
 .pro-image{
     width: 130px;
     height: 130px;
@@ -172,6 +192,11 @@ form{
 
 .button{
     background: #1da571;
+}
+.status{
+    text-align: center;
+    color: red;
+    max-width:400px;
 }
 
 .lesson{
