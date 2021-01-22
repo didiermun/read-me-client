@@ -12,7 +12,7 @@
     <div class="big">
         <div class="testimonials b-parents">
             <form action="#">
-                <select name="course" class="course-select">
+                <select name="course" class="course-select" v-model="lesson.course">
                     <option value="">--Course--</option>
                     <option value="Java">Java</option>
                     <option value="Java">Java</option>
@@ -20,7 +20,7 @@
                     <option value="Java">Java</option>
                 </select>
                 <label for="body">Body</label>
-                <textarea name="body" cols="80" rows="15"></textarea>
+                <textarea name="body" cols="80" rows="15" v-model="lesson.content"></textarea>
                 <input type="submit" value="Add Lesson">
             </form>
         </div>
@@ -91,7 +91,7 @@ import gql from 'graphql-tag'
 export default {
      data() {
     return {
-      course: {
+      lesson: {
         id: "",
         course: "",
         content: "",
@@ -99,6 +99,41 @@ export default {
       status:""
     };
   },
+  methods:{
+      async addNewCourse(){
+          const notValid = this.user.course.trim().length < 30;
+          if(notValid){
+              this.status = "Your content is not valid"
+          }
+          else{
+              this.status = "",
+      this.$apollo.mutate({
+        
+        mutation: gql`
+            mutation createCourse($courseData: CourseInput!) {
+            login(input: $courseData) {
+                content
+             }
+            }
+          `,
+          variables: {
+              "courseData":{
+                 content: this.lesson.content,
+                 course: this.lesson.course,
+            }
+          }
+      })
+      .then(response => {
+        console.log(response.data)
+        this.status = ""
+      })
+      .catch((error) => {
+          console.error(error)
+      this.status = error.graphQLErrors[0].message;
+    })
+          }
+    },
+  }
 }
 </script>
 <style scoped>
