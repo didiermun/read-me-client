@@ -89,21 +89,16 @@
 <script>
 import gql from 'graphql-tag'
 export default {
-    data() {
+     data() {
     return {
-      getCurrentUser: {
+      course: {
         id: "",
-        username: "healer",
-        password: "",
-        lname:"",
-        dob:"",
-        fname:"",
-        password:""
+        course: "",
+        content: "",
       },
+      status:""
     };
   },
-   apollo:{
-    }, 
 }
 </script>
 <style scoped>
