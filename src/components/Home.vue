@@ -334,6 +334,7 @@ input{
     min-width: 90%;
     background-color: #fff;
     min-height: 100%;
+    margin-right: 7%;
 }
 
 </style>
