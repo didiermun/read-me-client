@@ -82,14 +82,6 @@
             </div>
             
         </div>
-        <div class="stats parent">
-            <div>
-                <p>Last Month summary</p>
-                <p>193 Lessons in 40 Courses written</p>
-                <p>7210 Comments in 12934 likes</p>
-
-            </div>
-        </div>
     </div>
     </div>
 </div>    
@@ -264,12 +256,6 @@ input{
 }
 .testimonials{
     background-color: #3423;
-}
-.stats{
-    min-width: 90%;
-    background-color: #74B49B;
-    min-height: 38%;
-    display: none;
 }
 .profile{
     min-width: 90%;
