@@ -31,56 +31,56 @@
     </div>
     <div class="medium">
         <div class="recommendations b-parents main-parents">
-            <div><h2>My Guide</h2></div>
+            <div><h2>More lessons</h2></div>
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Text highliting</p>
+                <p class="title">Text highliting</p><p>by Didier</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
 
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">code formatting</p>
+                <p class="title">code formatting</p><p>by Healer</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
 
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">adding image</p>
+                <p class="title">adding image</p><p>by Munezero</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
 
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">font family and size</p>
+                <p class="title">font family and size</p><p>by Didier</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
 
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">re usable collable codes</p>
+                <p class="title">re usable collable codes</p><p>by Didier</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Features and links</p>
+                <p class="title">Features and links</p><p>by Didier</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p>
+                <p class="title">Introduction to Java</p><p>by Didier</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
             <div class="lesson">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p>
+                <p class="title">Introduction to Java</p><p>by Didier</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
