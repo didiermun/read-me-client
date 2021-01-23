@@ -11,6 +11,7 @@
     </div>
     <div class="bottom">
       To get started, edit <code>./src/components/App.vue</code> and save to reload.<br/>
+      <router-link to="/login">Go to login</router-link>
       <span class="fade">
         Checkout <code>./README.md</code> for more usages.
       </span>
