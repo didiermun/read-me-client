@@ -135,6 +135,8 @@ export default {
       .then(response => {
         console.log(response.data)
         this.status = ""
+        this.lesson.course = ""
+        this.lesson.content = ""
       })
       .catch((error) => {
           console.error(error)
