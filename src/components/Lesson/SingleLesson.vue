@@ -11,21 +11,10 @@
     <div class="main">
     <div class="big">
         <div class="testimonials b-parents">
-            <form action="#" v-on:submit.prevent="onSubmit">
-                <span class="status">{{status}}</span>
-                <div class="form-header">
-                <select name="course" class="course-select" v-model="lesson.course">
-                    <option value="">--Course--</option>
-                    <option value="5ffebd5e52325d2b1c4aa273">Java</option>
-                    <option value="5ffebd5e52325d2b1c4aa273">Scripts</option>
-                    <option value="5ffebd5e52325d2b1c4aa273">Maven</option>
-                    <option value="5ffebd5e52325d2b1c4aa273">Tools</option>
-                </select>
-                <input class="nameInput" type="text" name="name" v-model="lesson.name" placeholder="Lesson name">
-                </div>
+                <form action="#" v-on:submit.prevent="onSubmit">
                 <label for="body">Body</label>
-                <textarea name="body" cols="80" rows="15" v-model="lesson.content"></textarea>
-                <input type="submit" value="Add Lesson" v-on:click=addNewCourse>
+                <textarea name="body" cols="30" rows="3" v-model="lesson.content"></textarea>
+                <input type="submit" class="comment-sub" value="Add Comment">
             </form>
         </div>
     </div>
@@ -168,6 +157,9 @@ h3{
 h5{
     margin: 30px 50px 10px;
     display: none;
+}
+.comment-sub{
+    width: 30%;
 }
 .form-header{
     display: flex;
