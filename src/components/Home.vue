@@ -16,7 +16,7 @@
                 <div class="lesson-header">
                 <p class="title">{{lesson.id}}</p><p>by El healer</p>
                 </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+                <p class="body">{{lesson.content.substr(0, 110)}} ...</p>
             </div>
         </div>
         <div class="testimonials b-parents">
@@ -220,6 +220,7 @@ form input{
 .body{
     font-size: 12px;
     margin-top: -10px;
+    width: 90%;
 }
 .submit{
     margin: 10px 40px;
@@ -273,7 +274,8 @@ input{
     height: 550px;
     box-shadow: 0px 0px 4px rgb(167, 164, 164);
     margin-top: 30px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     border-radius: 4px;
 }
 .b-parents h2{

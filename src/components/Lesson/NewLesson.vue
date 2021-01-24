@@ -126,7 +126,7 @@ export default {
           variables: {
               "courseData":{
                  content: this.lesson.content,
-                 course: this.lesson.course,
+                 course: "600d4d74b6d55b1930546b8d",
                  name: this.lesson.name,
                  author:['5ffea2835cc3812678b9a435','5ffebd5e52325d2b1c4aa273']
             }
