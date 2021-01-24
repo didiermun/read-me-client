@@ -11,11 +11,69 @@
     <div class="main">
     <div class="big">
         <div class="testimonials b-parents">
+            <div class="lesson-content">
+                <h2>TEXT FORMATTING</h2>
+                <p>TEXT HIGHLITING
+
+by Didier
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+CODE FORMATTING
+
+by Healer
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+ADDING IMAGE
+
+by Munezero
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+FONT FAMILY AND SIZE
+
+by Didier
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+<p>TEXT HIGHLITING
+
+by Didier
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+CODE FORMATTING
+
+by Healer
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+ADDING IMAGE
+
+by Munezero
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+FONT FAMILY AND SIZE
+
+by Didier
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="commenting">
+            <div class="comments">
+                <p>this one is pretty cool, i really like this</p>
+                <div class="for-user">
+                <span class="names">Kerie Izere</span><span class="date">December 2020</span>
+                </div>
+            </div>
+            <div>
                 <form action="#" v-on:submit.prevent="onSubmit">
-                <label for="body">Body</label>
-                <textarea name="body" cols="30" rows="3" v-model="lesson.content"></textarea>
-                <input type="submit" class="comment-sub" value="Add Comment">
+                <textarea name="body" v-model="lesson.content"></textarea>
+                <input type="submit" class="comment-sub" value="Leave Comment">
             </form>
+            </div>
+            </div>
         </div>
     </div>
     <div class="medium">
@@ -137,13 +195,35 @@ export default {
 }
 </script>
 <style scoped>
+.for-user{
+    display: flex;
+    margin-top: -10px;
+}
+.comments{
+    width: 100%;
+    box-shadow: 1px 0px 2px #776969;
+}
+.date{
+    padding-left: 10px;
+}
+form{
+    box-shadow: 1px 0px 2px #776969;
+}
+.commenting div{
+    width: 80%;
+    align-content: center;
+    padding: 10px;
+    margin: 1px auto;
+}
 form *{
      margin: 0px auto 3px;
 }
 textarea{
-    margin-top: 0px;
-    font-size: 17px;
+    margin: 10px auto 5px;
+    font-size: 14px;
     text-align: center;
+    width: 80%;
+    height: 100px;
 }
 label{
     font-size: 15px;
@@ -177,6 +257,10 @@ h5{
     height: 130px;
     border-radius: 50%;
     margin: 0px 33% 0px;
+}
+.lesson-content{
+    padding: 30px;
+    margin: 20px;
 }
 form{
     display: flex;
