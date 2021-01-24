@@ -12,59 +12,12 @@
     <div class="big">
         <div class="recommendations b-parents">
             <div><h2>Recommendations</h2></div>
-            <div class="lesson">
+            <div class="lesson"  v-for="lesson in lessons" :key="lesson.id">
                 <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+                <p class="title">{{lesson.id}}</p><p>by El healer</p>
                 </div>
                 <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
-
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
-            
         </div>
         <div class="testimonials b-parents">
             <div><h2>Comment and feeds</h2></div>
@@ -130,6 +83,7 @@
              <img class="pro-image" src="https://th.bing.com/th/id/OIP.HJYbPogeBDhnlK0b1vFTWAD6D6?w=175&h=180&c=7&o=5&pid=1.7" alt="Photo">
             </div>
             <form action="#">
+                <span>{{ lessons.length}}</span>
                 <label for="fname">First name</label>
                 <input type="text" name="fname" placeholder="First Name" v-model="getCurrentUser.fname">
                 <label for="fname">Last name</label>
@@ -169,6 +123,7 @@ export default {
         fname:"",
         password:""
       },
+      lessons:[{}]
     };
   },
    apollo:{
@@ -185,6 +140,24 @@ export default {
             }
           }
         `,
+      },
+      lessons:{
+          query: gql`
+          query{
+  lessons{
+    id
+    content
+    name
+    author{
+      fname
+    }
+    course{
+      name
+    }
+    
+  }
+}
+          `
       }
     }, 
 }
