@@ -14,7 +14,7 @@
             <div><h2>Recommendations</h2></div>
             <div class="lesson"  v-for="lesson in lessons" :key="lesson.id">
                 <div class="lesson-header">
-                <p class="title">{{lesson.id}}</p><p>by El healer</p>
+                <p class="title">{{lesson.title}}</p><p>by El healer</p>
                 </div>
                 <p class="body">{{lesson.content.substr(0, 110)}} ...</p>
             </div>
@@ -147,7 +147,7 @@ export default {
   lessons{
     id
     content
-    name
+    title
     author{
       fname
     }

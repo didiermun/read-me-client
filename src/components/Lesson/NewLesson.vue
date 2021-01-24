@@ -21,7 +21,7 @@
                     <option value="5ffebd5e52325d2b1c4aa273">Maven</option>
                     <option value="5ffebd5e52325d2b1c4aa273">Tools</option>
                 </select>
-                <input class="nameInput" type="text" name="name" v-model="lesson.name" placeholder="Lesson name">
+                <input class="nameInput" type="text" name="name" v-model="lesson.title" placeholder="Lesson title">
                 </div>
                 <label for="body">Body</label>
                 <textarea name="body" cols="80" rows="15" v-model="lesson.content"></textarea>
@@ -99,7 +99,7 @@ export default {
         id: "",
         course: "",
         content: "",
-        name:""
+        title:""
       },
       status:""
     };
@@ -127,7 +127,7 @@ export default {
               "courseData":{
                  content: this.lesson.content,
                  course: "600d4d74b6d55b1930546b8d",
-                 name: this.lesson.name,
+                 title: this.lesson.title,
                  author:['5ffea2835cc3812678b9a435','5ffebd5e52325d2b1c4aa273']
             }
           }
