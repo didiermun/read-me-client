@@ -21,7 +21,7 @@
                     <option value="5ffebd5e52325d2b1c4aa273">Maven</option>
                     <option value="5ffebd5e52325d2b1c4aa273">Tools</option>
                 </select>
-                <input class="nameInput" type="text" name="name" v-model="lesson.title" placeholder="Lesson title">
+                <input class="nameInput" type="text" name="title" v-model="lesson.title" placeholder="Lesson title">
                 </div>
                 <label for="body">Body</label>
                 <textarea name="body" cols="80" rows="15" v-model="lesson.content"></textarea>
