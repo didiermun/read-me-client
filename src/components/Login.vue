@@ -109,10 +109,10 @@ input{
     margin: 5px;
     font-size: 17px;
     border-radius: 7px;
+    box-shadow:0px 0px 0px #999;
     border: 1px rgb(139, 135, 135) solid;
     display: block;
     background: #FFFFFF;
-    box-shadow:0px 0px 0px #999;
     padding: 10px;
     text-align: center;
 }

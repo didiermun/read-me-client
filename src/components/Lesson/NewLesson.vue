@@ -177,7 +177,7 @@ h5{
 }
 .nameInput{
     background-color: #fff;
-    border: 0px #FFFFFF solid;
+    box-shadow:0px 0px 0px #999;
     border: 1px rgb(139, 135, 135) solid;
     margin-top: 10px;
 }
