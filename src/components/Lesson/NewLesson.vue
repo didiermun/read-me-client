@@ -258,10 +258,10 @@ input{
     width: 80%;
     font-size: 15px;
     border-radius: 7px;
-    border: 0px #FFFFFF solid;
+     border: 0px #FFFFFF solid;
+    border: 1px rgb(139, 135, 135) solid;
     display: block;
     background: #ebe8e8;
-    box-shadow:1px 1px 1px rgb(207, 207, 207);
     padding: 10px;
     text-align: center;
 
