@@ -98,6 +98,7 @@ export default {
     margin-left: 15px;
     padding: 10px;
     font-size: 17px;
+    border: 0.3px rgb(194, 191, 191) solid;
 }
 span{
     font-weight: 700;
@@ -108,10 +109,10 @@ input{
     margin: 5px;
     font-size: 17px;
     border-radius: 7px;
-    border: 0px #FFFFFF solid;
+    border: 1px rgb(139, 135, 135) solid;
     display: block;
     background: #FFFFFF;
-    box-shadow:1.5px 1.5px 0px #999;
+    box-shadow:0px 0px 0px #999;
     padding: 10px;
     text-align: center;
 }
