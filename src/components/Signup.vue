@@ -169,9 +169,10 @@ input{
     border: 0px #FFFFFF solid;
     display: block;
     background: #FFFFFF;
-    box-shadow:1.5px 1.5px 0px #999;
+    border: 1px rgb(139, 135, 135) solid;
     padding: 10px;
     text-align: center;
+    box-shadow:0px 0px 0px #999;
 }
 h1{
     text-transform: capitalize;
