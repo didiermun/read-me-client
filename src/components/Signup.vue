@@ -167,9 +167,9 @@ input{
     font-size: 17px;
     border-radius: 7px;
     border: 0px #FFFFFF solid;
+    border: 1px rgb(139, 135, 135) solid;
     display: block;
     background: #FFFFFF;
-    border: 1px rgb(139, 135, 135) solid;
     padding: 10px;
     text-align: center;
     box-shadow:0px 0px 0px #999;
