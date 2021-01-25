@@ -91,7 +91,7 @@ export default {
     text-align: center;
 }
 .submit{
-    background-color: #272343;
+    background-color: #1da571;
     color: #FFFFFF;
     border-radius: 7px;
     margin-top: 15px;
@@ -101,7 +101,7 @@ export default {
 }
 span{
     font-weight: 700;
-    color: #272343;
+    color: #1da571;
 }
 input{
     width: 80%;
@@ -133,7 +133,7 @@ h1{
 .side{
     min-width: 50%;
     min-height: 47em;
-    background-color: #74B49B;
+    background-color: #1da571;
     float: left;
     margin: -10px;
     padding: -20px;

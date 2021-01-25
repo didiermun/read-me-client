@@ -146,7 +146,7 @@ export default {
 width: 80%;
 }
 .submit{
-    background-color: #272343;
+    background-color: #1da571;
     color: #FFFFFF;
     border-radius: 7px;
     margin-top: 15px;
@@ -156,7 +156,7 @@ width: 80%;
 }
 span{
     font-weight: 700;
-    color: #272343;
+    color: #1da571;
 }
 body{
     overflow: hidden;
@@ -191,7 +191,7 @@ h1{
 .side{
     min-width: 50%;
     min-height: 47em;
-    background-color: #74B49B;
+    background-color: #1da571;
     float: left;
     margin: -10px;
     padding: -20px;
