@@ -1,8 +1,5 @@
 import Vue from 'vue'
 import App from './components/App.vue'
-import Home from './components/Home.vue'
-import Login from './components/Login.vue'
-import Signup from './components/Signup.vue'
 import VueApollo from 'vue-apollo'
 import { ApolloClient } from 'apollo-client'
 import { HttpLink } from 'apollo-link-http'
@@ -33,12 +30,6 @@ const apolloProvider = new VueApollo({
     $loadingKey: 'loading'
   }
 })
-
-const routes = {
-  '/': Home,
-  '/login': Login,
-  '/signup': Signup
-}
 
 Vue.config.productionTip = false
 new Vue({

@@ -103,6 +103,7 @@
 <script>
 import gql from 'graphql-tag'
 export default {
+    name: 'home',
     data() {
     return {
       getCurrentUser: {

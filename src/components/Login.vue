@@ -30,6 +30,7 @@
 <script>
 import gql from 'graphql-tag'
 export default {
+    name: 'login',
      data() {
     return {
       user: {
