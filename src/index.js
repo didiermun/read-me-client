@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import App from './components/App.vue'
 import VueApollo from 'vue-apollo'
+import Vuesax from 'vuesax'
 import { ApolloClient } from 'apollo-client'
 import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import router from './router/router.js'
 import './index.css'
+import 'vuesax/dist/vuesax.css'
 Vue.config.productionTip = false
 
 const httpLink = new HttpLink({
@@ -35,6 +37,7 @@ Vue.config.productionTip = false
 new Vue({
   provide: apolloProvider.provide(),
   router,
+  Vuesax,
   render: h => h(App)
 }).$mount("#app");
 

@@ -11,24 +11,19 @@
         <form action="#" method="post" autocomplete="off">
             <div class="for-names">
             <div>
-                <label for="fname">First name</label>
                 <input type="text" name="fname" id="email" placeholder="First name" v-model="user.fname">
             </div>
             <div>
-                <label for="fname">Last name</label>
                 <input type="text" name="lname" id="email" placeholder="Last name" v-model="user.lname">
             </div>
             </div>
             <div>
-                <label for="username">username</label>
                 <input type="text" name="username" id="username" placeholder="Username" v-model="user.username">
             </div>
              <div>
-                <label for="email">email</label>
                 <input type="text" name="email" id="email" placeholder="Email" v-model="user.email">
             </div>
             <div>
-                <label for="password">password</label>
                 <input type="password" name="password" id="password" placeholder="Password" v-model="user.password">
             </div>
             <div>
@@ -124,7 +119,8 @@ export default {
 *{
     font-family:  'Bahnschrift',sans-serif;
 }
-body .main{
+.main{
+    height: 620px;
     overflow-y: hidden;
 }
 .status{
@@ -166,16 +162,17 @@ body{
     overflow: hidden;
 }
 input{
-    width: 80%;
+    width: 81%;
     margin: 5px;
     font-size: 17px;
     border-radius: 7px;
-    border: 0px #FFFFFF solid;
+    border: 1px #000 solid;
     display: block;
     background: #FFFFFF;
     box-shadow:0px 0px 0px #999;
     padding: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 h1{
     text-transform: capitalize;
@@ -191,7 +188,7 @@ h1{
 .side2{
    min-width: 50%;
    float: right; 
-   background-color: rgb(234, 244, 255);
+   background-color: rgb(255, 255, 255);
    margin-left:0px;
    padding-left: 0px;
    overflow: hidden;
