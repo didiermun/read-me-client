@@ -36,7 +36,7 @@
             </div>
         </form>
     </div>
-    <p class="altenative">Already have an account? <span>Sign in here</span></p>
+    <p class="altenative">Already have an account? <router-link to="signin"><span>Sign in here</span></router-link></p>
     </div>
     </div>
 </template>

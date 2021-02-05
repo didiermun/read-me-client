@@ -23,7 +23,7 @@
             </div>
         </form>
     </div>
-    <p class="altenative">Don't have an account <span>Sign up here</span></p>
+    <p class="altenative">Don't have an account? <router-link to="signup"><span>Sign up here</span></router-link></p>
     </div>
     </div>
 </template>
