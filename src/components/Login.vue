@@ -92,24 +92,26 @@ export default {
     text-align: center;
 }
 .submit{
-    background-color: #272343;
+    background-color: #1da571;
     color: #FFFFFF;
     border-radius: 7px;
     margin-top: 15px;
     margin-left: 15px;
     padding: 10px;
     font-size: 17px;
+    border: 0.3px rgb(194, 191, 191) solid;
 }
 span{
     font-weight: 700;
-    color: #272343;
+    color: #1da571;
 }
 input{
     width: 80%;
     margin: 5px;
     font-size: 17px;
     border-radius: 7px;
-    border: 0px #FFFFFF solid;
+    box-shadow:0px 0px 0px #999;
+    border: 1px rgb(139, 135, 135) solid;
     display: block;
     background: #FFFFFF;
     box-shadow:0px 0px 0px #999;
@@ -135,7 +137,7 @@ h1{
 .side{
     min-width: 50%;
     min-height: 47em;
-    background-color: #74B49B;
+    background-color: #1da571;
     float: left;
     margin: -10px;
     padding: -20px;

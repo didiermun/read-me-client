@@ -10,100 +10,128 @@
     </div>
     <div class="main">
     <div class="big">
-        <div class="recommendations b-parents">
-            <div><h2>Recommendations</h2></div>
-            <div class="lesson"  v-for="lesson in lessons" :key="lesson.id">
-                <div class="lesson-header">
-                <p class="title">{{lesson.title}}</p><p>by El healer</p>
-                </div>
-                <p class="body">{{lesson.content.substr(0, 110)}} ...</p>
-            </div>
-        </div>
         <div class="testimonials b-parents">
-            <div><h2>Comment and feeds</h2></div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
+            <div class="lesson-content">
+                <h2>TEXT FORMATTING</h2>
+                <p>TEXT HIGHLITING
 
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
+by Didier
 
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
 
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
-            </div>
+CODE FORMATTING
 
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+by Healer
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+ADDING IMAGE
+
+by Munezero
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+FONT FAMILY AND SIZE
+
+by Didier
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+<p>TEXT HIGHLITING
+
+by Didier
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+CODE FORMATTING
+
+by Healer
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+ADDING IMAGE
+
+by Munezero
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...
+
+FONT FAMILY AND SIZE
+
+by Didier
+
+The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
+            <div class="commenting">
+            <div class="comments">
+                <p>this one is pretty cool, i really like this</p>
+                <div class="for-user">
+                <span class="names">Kerie Izere</span><span class="date">December 2020</span>
                 </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            <div>
+                <form action="#" v-on:submit.prevent="onSubmit">
+                <textarea name="body" v-model="lesson.content"></textarea>
+                <input type="submit" class="comment-sub" value="Leave Comment">
+            </form>
             </div>
-            <div class="lesson">
-                <div class="lesson-header">
-                <p class="title">Introduction to Java</p><p>by El healer</p>
-                </div>
-                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
         </div>
     </div>
     <div class="medium">
-        <div class="profile parent">
-            <h3>My Profile</h3>
-            <div class="photo">
-            <h5>Photo</h5>
-             <img class="pro-image" src="https://th.bing.com/th/id/OIP.HJYbPogeBDhnlK0b1vFTWAD6D6?w=175&h=180&c=7&o=5&pid=1.7" alt="Photo">
+        <div class="recommendations b-parents main-parents">
+            <div><h2>More lessons</h2></div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Text highliting</p><p>by Didier</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
-            <form action="#">
-                <span>{{ lessons.length}}</span>
-                <label for="fname">First name</label>
-                <input type="text" name="fname" placeholder="First Name" v-model="getCurrentUser.fname">
-                <label for="fname">Last name</label>
-                <input type="text" name="lname" placeholder="Last name" v-model="getCurrentUser.lname">
-                <label for="fname">Date of birth</label>
-                <input type="date" name="username" placeholder="Date Of Birth" v-model="getCurrentUser.dob">
-                <label for="fname">Email</label>
-                <input type="text" name="username" placeholder="Email" v-model="getCurrentUser.email">
-                <label for="fname">Password</label>
-                <input type="text" name="username" placeholder="Password" v-model="getCurrentUser.password">
-                <input type="submit" value="Save Changes" class="button">
-            </form>
-        </div>
-        <div class="stats parent">
-            <div>
-                <p>Last Month summary</p>
-                <p>193 Lessons in 40 Courses written</p>
-                <p>7210 Comments in 12934 likes</p>
 
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">code formatting</p><p>by Healer</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
             </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">adding image</p><p>by Munezero</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">font family and size</p><p>by Didier</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">re usable collable codes</p><p>by Didier</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Features and links</p><p>by Didier</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by Didier</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            <div class="lesson">
+                <div class="lesson-header">
+                <p class="title">Introduction to Java</p><p>by Didier</p>
+                </div>
+                <p class="body">The safe and unsafe modifier keywords can be used in conjunction with all the rest of these keywords ...</p>
+            </div>
+            
         </div>
     </div>
     </div>
@@ -112,60 +140,90 @@
 <script>
 import gql from 'graphql-tag'
 export default {
-    name: 'home',
-    data() {
+     data() {
     return {
-      getCurrentUser: {
+      lesson: {
         id: "",
-        username: "healer",
-        password: "",
-        lname:"",
-        dob:"",
-        fname:"",
-        password:""
+        course: "",
+        content: "",
+        name:""
       },
-      lessons:[{}]
+      status:""
     };
   },
-   apollo:{
-      getCurrentUser:{
-        query: gql`
-          query {
-            getCurrentUser{
-                id
-                username
-                lname
-                fname
-                email
-                dob
+  methods:{
+       onSubmit () {
+    },
+      async addNewCourse(){
+          const notValid = this.lesson.content.trim().length < 30;
+          if(notValid){
+              this.status = "Your content is not valid"
+          }
+          else{
+              this.status = "",
+      this.$apollo.mutate({
+        
+        mutation: gql`
+            mutation createLesson($courseData: LessonInput!) {
+            createLesson(input: $courseData) {
+                content
+             }
+            }
+          `,
+          variables: {
+              "courseData":{
+                 content: this.lesson.content,
+                 course: this.lesson.course,
+                 name: this.lesson.name,
+                 author:['5ffea2835cc3812678b9a435','5ffebd5e52325d2b1c4aa273']
             }
           }
-        `,
-      },
-      lessons:{
-          query: gql`
-          query{
-  lessons{
-    id
-    content
-    title
-    author{
-      fname
-    }
-    course{
-      name
-    }
-    
+      })
+      .then(response => {
+        console.log(response.data)
+        this.status = ""
+        this.lesson.course = ""
+        this.lesson.content = ""
+      })
+      .catch((error) => {
+          console.error(error)
+      this.status = error.graphQLErrors[0].message;
+    })
+          }
+    },
   }
-}
-          `
-      }
-    }, 
 }
 </script>
 <style scoped>
+.for-user{
+    display: flex;
+    margin-top: -10px;
+}
+.comments{
+    width: 100%;
+    box-shadow: 1px 0px 2px #776969;
+}
+.date{
+    padding-left: 10px;
+}
+form{
+    box-shadow: 1px 0px 2px #776969;
+}
+.commenting div{
+    width: 80%;
+    align-content: center;
+    padding: 10px;
+    margin: 1px auto;
+}
 form *{
      margin: 0px auto 3px;
+}
+textarea{
+    margin: 10px auto 5px;
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+    height: 100px;
 }
 label{
     font-size: 15px;
@@ -180,11 +238,29 @@ h5{
     margin: 30px 50px 10px;
     display: none;
 }
+.comment-sub{
+    width: 30%;
+}
+.form-header{
+    display: flex;
+}
+.form-header *{
+    margin: 5px;
+}
+.nameInput{
+    background-color: #fff;
+    box-shadow: 0px 1px 1px rgb(34, 3, 3);
+    margin-top: 10px;
+}
 .pro-image{
     width: 130px;
     height: 130px;
     border-radius: 50%;
     margin: 0px 33% 0px;
+}
+.lesson-content{
+    padding: 30px;
+    margin: 20px;
 }
 form{
     display: flex;
@@ -195,6 +271,11 @@ form{
 .button{
     background: #1da571;
 }
+.status{
+    text-align: center;
+    color: red;
+    max-width:400px;
+}
 
 .lesson{
     padding: 10px 20px;
@@ -202,6 +283,17 @@ form{
     box-shadow: 0px 0px 1px;
     cursor: pointer;
     /* border-bottom: 2px rgb(173, 160, 146) solid; */
+}
+.course-select{
+    width: 150px;
+    font-size: 19px;
+    margin-bottom: 0px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    line-height:1;
+    box-shadow:0 0 1px 0 rgba(129, 36, 36, 0.6);
 }
 .lesson-header{
     display: flex;
@@ -221,7 +313,6 @@ form input{
 .body{
     font-size: 12px;
     margin-top: -10px;
-    width: 90%;
 }
 .submit{
     margin: 10px 40px;
@@ -270,13 +361,12 @@ input{
 .big .b-parents{
     background-color: #fff;
     margin-left: 20px;
-    min-width: 43%;
-    max-width: 43%;
+    min-width: 90%;
+    max-width: 90%;
     height: 550px;
     box-shadow: 0px 0px 4px rgb(167, 164, 164);
     margin-top: 30px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: auto;
     border-radius: 4px;
 }
 .b-parents h2{
@@ -300,17 +390,10 @@ input{
 .testimonials{
     background-color: #3423;
 }
-.stats{
-    min-width: 90%;
-    background-color: #74B49B;
-    min-height: 38%;
-    display: none;
-}
 .profile{
     min-width: 90%;
     background-color: #fff;
     min-height: 100%;
-    margin-right: 7%;
 }
 
 </style>

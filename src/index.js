@@ -12,7 +12,7 @@ Vue.config.productionTip = false
 
 const httpLink = new HttpLink({
   // You should use an absolute URL here
-  uri: 'http://localhost:3000/graphql',
+  uri: 'http://localhost:2500/graphql',
   headers: {
     token: localStorage.getItem("user_auth")
   }
