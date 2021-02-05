@@ -124,6 +124,9 @@ export default {
 *{
     font-family:  'Bahnschrift',sans-serif;
 }
+body .main{
+    overflow-y: hidden;
+}
 .status{
     text-align: center;
     color: red;
@@ -170,7 +173,7 @@ input{
     border: 0px #FFFFFF solid;
     display: block;
     background: #FFFFFF;
-    box-shadow:1.5px 1.5px 0px #999;
+    box-shadow:0px 0px 0px #999;
     padding: 10px;
     text-align: center;
 }
@@ -181,21 +184,25 @@ h1{
     margin-left: 20px;
 }
 .sign-up-form{
-   margin: auto;
    margin-top: 80px; 
-   margin-left: 0px;
+   margin-left: 80px auto;
+   padding-left: 50px;
 }
 .side2{
-   min-width: 40%;
+   min-width: 50%;
    float: right; 
+   background-color: rgb(234, 244, 255);
+   margin-left:0px;
+   padding-left: 0px;
+   overflow: hidden;
 }
 .side{
     min-width: 50%;
     min-height: 47em;
     background-color: #74B49B;
     float: left;
-    margin: -10px;
-    padding: -20px;
+    margin: 0px;
+    padding: 0px;
 }
 label{
     font-weight: 40;

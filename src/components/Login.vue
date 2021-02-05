@@ -112,7 +112,7 @@ input{
     border: 0px #FFFFFF solid;
     display: block;
     background: #FFFFFF;
-    box-shadow:1.5px 1.5px 0px #999;
+    box-shadow:0px 0px 0px #999;
     padding: 10px;
     text-align: center;
 }
@@ -130,6 +130,7 @@ h1{
 .side2{
    min-width: 40%;
    float: right; 
+   background-color: rgb(234, 244, 255);
 }
 .side{
     min-width: 50%;
