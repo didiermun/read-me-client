@@ -10,6 +10,7 @@
       <h1>Welcome to Vue.js</h1>
     </div>
     <div class="bottom">
+      <router-link to="signup">Don't an have an account yet? <span class="directive">Sign up here</span></router-link>
       To get started, edit <code>./src/components/App.vue</code> and save to reload.<br/>
       <span class="fade">
         Checkout <code>./README.md</code> for more usages.
