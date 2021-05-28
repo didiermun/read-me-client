@@ -31,7 +31,7 @@
     "object-assign": "^4.1.1",
     "offline-plugin": "^4.8.0",
     "promise-polyfill": "^6.0.2",
-    "sass-loader": "^10.1.1",
+    "sass-loader": "10.2.0",
     "tailwindcss": "^2.0.2",
     "vue-apollo": "^3.0.5",
     "vue-router": "^3.4.9",
