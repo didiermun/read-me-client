@@ -29,7 +29,7 @@
     "node-sass": "^5.0.0",
     "normalize.css": "^7.0.0",
     "object-assign": "^4.1.1",
-    "offline-plugin": "^4.8.0",
+    "offline-plugin": "5.0.7",
     "promise-polyfill": "^6.0.2",
     "sass-loader": "^10.1.1",
     "tailwindcss": "^2.0.2",
