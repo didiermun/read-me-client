@@ -22,7 +22,7 @@
     "apollo-client": "2.6.10",
     "apollo-link": "1.2.14",
     "apollo-link-http": "1.5.17",
-    "axios": "0.21.1",
+    "axios": "0.28.0",
     "bulma": "0.9.3",
     "graphql": "15.5.0",
     "graphql-tag": "2.12.4",
